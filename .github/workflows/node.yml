@@ -1,12 +1,14 @@
 name: Node CI
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'back/**'
 
 jobs:
   build:
 
     runs-on: self-hosted
-
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
