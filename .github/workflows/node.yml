@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '20.x'
       - name: "Install"
-        working-directory: "/back"
+        working-directory: ./back
         run: npm install
       - name: "Build"
         working-directory: ./back
