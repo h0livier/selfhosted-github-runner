@@ -21,6 +21,8 @@ jobs:
         with:
           path: ${{ github.workspace }}
           node-version: '20.x'
+      - name: "Where am i"
+        run: pwd
       - name: "Install dependancies"
         working-directory: ./back
         run: npm install
