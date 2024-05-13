@@ -1,5 +1,8 @@
 FROM ubuntu:22.04
 
+ENV REPO=''
+ENV TOKEN=''
+
 ARG RUNNER_VERSION="2.315.0"
 
 ARG DEBIAN_FRONTEND=noninteractive
